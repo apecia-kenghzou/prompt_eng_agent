@@ -1,0 +1,290 @@
+# Agent Configuration Schema
+# This file defines different domains, their specialized agents, and focus areas
+
+domains:
+  software_development:
+    name: "Software Development"
+    description: "Agents specialized in various aspects of software engineering"
+    agents:
+      frontend_developer:
+        name: "Frontend Developer Agent"
+        role: "Specializes in client-side development and user interfaces"
+        focus_areas:
+          frameworks:
+            - name: "React.js"
+              priority: "high"
+              versions: ["22.x","23.x", "24.x"]
+            - name: "Vue.js"
+              priority: "medium"
+            - name: "Angular"
+              priority: "medium"
+          ui_libraries:
+            - name: "Material-UI (MUI)"
+              priority: "high"
+            - name: "Ant Design"
+              priority: "medium"
+            - name: "Tailwind CSS"
+              priority: "high"
+          patterns:
+            - "MVC (Model-View-Controller)"
+            - "MVVM (Model-View-ViewModel)"
+            - "Component-Based Architecture"
+            - "Atomic Design"
+          skills:
+            - "Responsive Design"
+            - "State Management (Redux, Zustand, Context API)"
+            - "Performance Optimization"
+            - "Accessibility (WCAG)"
+            - "SEO Optimization"
+            - "Progressive Web Apps"
+          tools:
+            - "Webpack/Vite"
+            - "TypeScript"
+            - "Testing (Jest, React Testing Library)"
+            - "Storybook"
+        success_metrics:
+          - "Page Load Time < 3s"
+          - "Lighthouse Score > 90"
+          - "Code Coverage > 80%"
+          - "Accessibility Score 100%"
+      
+      backend_developer:
+        name: "Backend Developer Agent"
+        role: "Specializes in server-side logic and database management"
+        focus_areas:
+          languages:
+            - name: "Node.js"
+              priority: "high"
+            - name: "Python"
+              priority: "high"
+            - name: "Java"
+              priority: "medium"
+            - name: "Go"
+              priority: "medium"
+            - name: "Rust"
+              priority: "low"  
+          frameworks:
+            - "Express.js"
+            - "FastAPI"
+            - "Spring Boot"
+            - "Django"
+            - "Actix Web"
+          databases:
+            - type: "SQL"
+              technologies: ["Mariadb","PostgreSQL", "SQLite"]
+            - type: "NoSQL"
+              technologies: ["influxdb 1.x","MongoDB", "Redis", "Cassandra","Neo4j"]
+          patterns:
+            - "RESTful API Design"
+            - "GraphQL"
+            - "Microservices Architecture"
+            - "Event-Driven Architecture"
+            - "CQRS"
+          skills:
+            - "API Security (OAuth, JWT)"
+            - "Database Optimization"
+            - "Caching Strategies"
+            - "Message Queuing (RabbitMQ, Kafka)"
+            - "Container Orchestration (Docker, Kubernetes)"
+        success_metrics:
+          - "API Response Time < 200ms"
+          - "99.9% Uptime"
+          - "Database Query Time < 100ms"
+      
+      devops_engineer:
+        name: "DevOps Engineer Agent"
+        role: "Specializes in deployment, infrastructure, and CI/CD"
+        focus_areas:
+          ci_cd:
+            - "Gitea"
+            - "Ansible"
+            - "GitHub Actions"
+            - "Jenkins"
+            - "GitLab CI"
+            - "CircleCI"
+          infrastructure:
+            - "AWS"
+            - "Google Cloud Platform"
+            - "Azure"
+            - "Terraform"
+          monitoring:
+            - "Prometheus"
+            - "Grafana"
+            - "ELK Stack"
+            - "DataDog"
+          skills:
+            - "Infrastructure as Code"
+            - "Container Management"
+            - "Security Scanning"
+            - "Blue-Green Deployments"
+            - "Rollback Strategies"
+      
+      qa_engineer:
+        name: "QA Engineer Agent"
+        role: "Specializes in testing and quality assurance"
+        focus_areas:
+          testing_types:
+            - "Unit Testing"
+            - "Integration Testing"
+            - "E2E Testing"
+            - "Performance Testing"
+            - "Security Testing"
+          tools:
+            - "Selenium"
+            - "Cypress"
+            - "Playwright"
+            - "JMeter"
+            - "Postman"
+          methodologies:
+            - "TDD (Test-Driven Development)"
+            - "BDD (Behavior-Driven Development)"
+            - "Shift-Left Testing"
+
+  financial_analysis:
+    name: "Financial Analysis"
+    description: "Agents specialized in financial markets and analysis"
+    agents:
+      risk_management:
+        name: "Risk Management Agent"
+        role: "Specializes in identifying and mitigating financial risks"
+        focus_areas:
+          risk_types:
+            - "Market Risk"
+            - "Credit Risk"
+            - "Operational Risk"
+            - "Liquidity Risk"
+          metrics:
+            - "Value at Risk (VaR)"
+            - "Conditional VaR (CVaR)"
+            - "Sharpe Ratio"
+            - "Beta"
+            - "Standard Deviation"
+          tools:
+            - "Monte Carlo Simulation"
+            - "Stress Testing"
+            - "Scenario Analysis"
+            - "Risk Matrices"
+          frameworks:
+            - "Basel III"
+            - "COSO Framework"
+            - "ISO 31000"
+        success_metrics:
+          - "Risk-Adjusted Returns"
+          - "Maximum Drawdown < 20%"
+          - "95% VaR Accuracy"
+      
+      technical_analysis:
+        name: "Technical Chart Analysis Agent"
+        role: "Specializes in chart patterns and technical indicators"
+        focus_areas:
+          indicators:
+            - category: "Trend"
+              items: ["Moving Averages", "MACD", "ADX", "Parabolic SAR"]
+            - category: "Momentum"
+              items: ["RSI", "Stochastic", "Williams %R", "CCI"]
+            - category: "Volume"
+              items: ["OBV", "Volume Profile", "Accumulation/Distribution"]
+            - category: "Volatility"
+              items: ["Bollinger Bands", "ATR", "Keltner Channels"]
+          patterns:
+            - "Head and Shoulders"
+            - "Double Top/Bottom"
+            - "Triangles"
+            - "Flags and Pennants"
+            - "Cup and Handle"
+          timeframes:
+            - "Intraday (1m, 5m, 15m)"
+            - "Daily"
+            - "Weekly"
+            - "Monthly"
+          analysis_methods:
+            - "Elliott Wave Theory"
+            - "Fibonacci Retracements"
+            - "Support/Resistance Levels"
+            - "Trend Line Analysis"
+        success_metrics:
+          - "Signal Accuracy > 65%"
+          - "Risk-Reward Ratio > 2:1"
+          - "Win Rate > 55%"
+      
+      fundamental_analysis:
+        name: "Fundamental Analysis Agent"
+        role: "Specializes in company valuation and economic analysis"
+        focus_areas:
+          financial_statements:
+            - "Income Statement Analysis"
+            - "Balance Sheet Analysis"
+            - "Cash Flow Analysis"
+          valuation_methods:
+            - "DCF (Discounted Cash Flow)"
+            - "P/E Ratio Analysis"
+            - "PEG Ratio"
+            - "Book Value"
+            - "Dividend Discount Model"
+          metrics:
+            - "ROE (Return on Equity)"
+            - "ROA (Return on Assets)"
+            - "Debt-to-Equity Ratio"
+            - "Current Ratio"
+            - "EBITDA Margin"
+          economic_indicators:
+            - "GDP Growth"
+            - "Interest Rates"
+            - "Inflation"
+            - "Employment Data"
+
+  data_science:
+    name: "Data Science"
+    description: "Agents specialized in data analysis and machine learning"
+    agents:
+      ml_engineer:
+        name: "Machine Learning Engineer Agent"
+        role: "Specializes in developing and deploying ML models"
+        focus_areas:
+          algorithms:
+            - category: "Supervised"
+              items: ["Random Forest", "XGBoost", "Neural Networks", "SVM"]
+            - category: "Unsupervised"
+              items: ["K-Means", "DBSCAN", "PCA", "Autoencoders"]
+            - category: "Deep Learning"
+              items: ["CNN", "RNN", "LSTM", "Transformers", "GANs"]
+          frameworks:
+            - "TensorFlow"
+            - "PyTorch"
+            - "Scikit-learn"
+            - "Hugging Face"
+          deployment:
+            - "MLflow"
+            - "Kubeflow"
+            - "TensorFlow Serving"
+            - "ONNX"
+          skills:
+            - "Feature Engineering"
+            - "Model Optimization"
+            - "Hyperparameter Tuning"
+            - "Cross-Validation"
+            - "A/B Testing"
+        success_metrics:
+          - "Model Accuracy > 90%"
+          - "F1 Score > 0.85"
+          - "Inference Time < 100ms"
+          - "Model Size < 100MB"
+
+# Configuration for prompt improvement system
+prompt_improvement:
+  version: "1.0.0"
+  evaluation_criteria:
+    - "Clarity and Specificity"
+    - "Context Completeness"
+    - "Role Definition"
+    - "Success Metrics"
+    - "Constraints and Boundaries"
+    - "Output Format Specification"
+    - "Error Handling"
+    - "Edge Case Coverage"
+  improvement_strategies:
+    - "Iterative Refinement"
+    - "A/B Testing"
+    - "Feedback Integration"
+    - "Performance Metrics Analysis"
+    - "Cross-Domain Learning"
