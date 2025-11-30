@@ -115,9 +115,21 @@ prompts/domains/{domain}/{agent}/
 ### Data Science
 - ✅ **ML Engineer** (v2.1.0) - 94/100 - Excellent
 
-**Total**: 8 production-ready agents | **Average Quality**: 93/100
+**Total**: 8 agents | **Average Quality**: 93/100 (generic review) → 85/100 (expert review)
 
-See [COMPREHENSIVE_AGENT_REVIEW.md](COMPREHENSIVE_AGENT_REVIEW.md) for detailed critique of all agents.
+### Review Status
+- ✅ **Generic Critique Complete**: [COMPREHENSIVE_AGENT_REVIEW.md](COMPREHENSIVE_AGENT_REVIEW.md)
+- ⚠️ **Expert Reviews Complete**: [expert_reviews/ALL_EXPERT_REVIEWS_SUMMARY.md](expert_reviews/ALL_EXPERT_REVIEWS_SUMMARY.md)
+
+**Expert Consensus**: Good educational content, but **NOT production-ready** without critical fixes.
+
+### Critical Gaps Identified by Experts:
+1. Backend: Database transactions, API idempotency, circuit breakers
+2. DevOps: Runbooks, K8s resource limits, secrets rotation
+3. Risk Management: Regulatory compliance (Basel III)
+4. Fundamental Analysis: WACC calculation methodology
+
+See expert reviews for detailed analysis and real-world war stories.
 
 ## Why This Approach?
 
